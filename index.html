@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ehub</title>
+    <!-- -------------- main style ------------- -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ------------------ Start header ---------------------- -->
+    <!-- for dark header add "dark" class in header tag  -->
+    <header class="">
+      <!-- --------------Up Nav ------------- -->
+      <div class="up-nav flex-row space-btween">
+        <div class="flex-row gap-35">
+          <a class="text-blue" href="#">ejada website</a>
+          <a class="flex-row gap-4 text-gray" href="#"
+            >Investors Relations
+            <img src="assets/icons/external-link.svg" alt=""
+          /></a>
+        </div>
+        <div class="dots-more pointer">
+          <img src="assets/icons/dots-vertical.svg" alt="" />
+        </div>
+        <ul class="extra-nav flex-row gap-16">
+          <li class="flex-row">
+            <img src="assets/icons/Vector.svg" alt="" /><a href=""
+              >Accessibility</a
+            >
+          </li>
+          <!--- Language Switch --->
+          <div class="language-dropdown" onclick="toggleLanguageDropdown()">
+            <img id="language-flag" src="assets/icons/us.svg" alt="Flag" />
+            <span id="language-code">EN</span>
+            <img src="assets/icons/chevron-down-blue.svg" alt="" />
+            <ul id="language-options" class="language-options hidden">
+              <li onclick="setLanguage('EN', 'us')">
+                <img src="assets/icons/us.png" alt="US" /> EN
+              </li>
+              <li onclick="setLanguage('AR', 'sa')">
+                <img src="assets/icons/sa.png" alt="Saudi" /> AR
+              </li>
+            </ul>
+          </div>
+          <!-- -------------  -->
+          <img src="assets/icons/Line-blue.svg" alt="" />
+          <li>
+            <a class="flex-row gap-4" href=""
+              >Bawabetna<img src="assets/icons/external-link-blue.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- ----------------Second/Main Nav------------------ -->
+      <div class="main-nav flex-row space-btween">
+        <div class="nav-menu-icon pointer">
+          <img src="assets/icons/menu-2.svg" alt="" />
+        </div>
+        <div class="logo">
+          <img src="assets/logos/ejada-logo.png" alt="" />
+        </div>
+        <ul class="nav-items flex-row gap-8">
+          <li class="item">
+            <a class="flex-row gap-4" href="#"
+              >What We Do<img src="assets/icons/chevron-down-blue.svg" alt=""
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#">Who We Are</a>
+          </li>
+          <li class="item">
+            <a href="#">Knowledge Hub</a>
+          </li>
+          <li class="item">
+            <a href="#">Join Our Team</a>
+          </li>
+          <li class="item">
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+        <div class="flex-row gap-16">
+          <div class="search pointer">
+            <img src="assets/icons/search.svg" alt="search icon" />
+          </div>
+          <div class="nav-btns flex-row gap-12">
+            <a class="btn btn-secondary ehub-text">
+              <span><img src="assets/icons/e.svg" alt="" /></span>hub
+            </a>
+            <a class="btn btn-primary"> Contact Us </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ------------------ End header ------------------------ -->
+    <!-- ------------------------------------------------------ -->
+    <!-- ------------------ Start main ------------------------ -->
+    <main>main content section here</main>
+    <!-- ------------------ End main -------------------------- -->
+    <!-- ------------------ Start footer ---------------------- -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="logo-about-section flex-col gap-35">
+            <img
+              src="assets/logos/ejada-logo-white.png"
+              alt=""
+              class="footer-logo"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+              eiusmod.Lorem ipsum dolor sit amet, consec tetur adipiscing elit,
+              sed do eiusmod.
+            </p>
+            <div class="social-media-icons flex-row gap-8">
+              <img
+                src="assets/icons/square-facebook-brands-solid 1.svg"
+                alt=""
+              />
+              <img src="assets/icons/linkedin-brands-solid.svg" alt="" />
+              <img
+                src="assets/icons/square-instagram-brands-solid 1.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="buttom-nav">
+            <div class="grid-item item-1">
+              <div class="item-header flex-row space-btween" data-index="1">
+                <h3>What We Do</h3>
+                <img
+                  class="open-item-icon"
+                  data-index="1"
+                  src="assets/icons/chevron-down-White.svg"
+                  alt=""
+                />
+              </div>
+              <div class="item-content flex-row gap-60" data-index="1">
+                <div class="flex-col gap-12">
+                  <h4>Solution</h4>
+                  <ul class="flex-col gap-12">
+                    <li><a href="#">Enterprise Applications</a></li>
+                    <li><a href="#">Emerging Technology</a></li>
+                    <li><a href="#">Data and Analytics</a></li>
+                    <li><a href="#">Mobility and (CX)</a></li>
+                    <li><a href="#">Infrastructure & Observability</a></li>
+                    <li><a href="#">Cloud Services</a></li>
+                    <li><a href="#">Cybersecurity</a></li>
+                    <li><a href="#">Pre-built Solutions</a></li>
+                  </ul>
+                </div>
+                <div class="flex-col gap-12">
+                  <h4>Industries</h4>
+                  <ul class="flex-col gap-12">
+                    <li><a href="#">Financial Services</a></li>
+                    <li><a href="#">Telecommunication</a></li>
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Government & Military</a></li>
+                    <li><a href="#">Bespoke Development</a></li>
+                    <li><a href="#">Real estate</a></li>
+                    <li><a href="#">Cross-Industry</a></li>
+                    <li><a href="#">STEC</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item item-2">
+              <div class="item-header flex-row space-btween" data-index="2">
+                <h3>Who We Are</h3>
+                <img
+                  class="open-item-icon"
+                  data-index="2"
+                  src="assets/icons/chevron-down-White.svg"
+                  alt=""
+                />
+              </div>
+              <ul class="item-content flex-col gap-12" data-index="2">
+                <li><a href="#"> About us</a></li>
+                <li><a href="#"> Partners in Success</a></li>
+              </ul>
+            </div>
+            <div class="grid-item item-3">
+              <h3>
+                <a href="#">Join Our Team</a>
+              </h3>
+            </div>
+            <div class="grid-item item-4">
+              <div class="item-header flex-row space-btween" data-index="4">
+                <h3>Knowledge Hub</h3>
+                <img
+                  class="open-item-icon"
+                  data-index="4"
+                  src="assets/icons/chevron-down-White.svg"
+                  alt=""
+                />
+              </div>
+              <ul class="item-content flex-col gap-12" data-index="4">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">CSR</a></li>
+                <li><a href="#">Social media feeds</a></li>
+              </ul>
+            </div>
+            <div class="grid-item item-5">
+              <h3>
+                <a href="#">Blog </a>
+              </h3>
+            </div>
+            <div class="grid-item item-6">
+              <div class="item-header flex-row space-btween" data-index="6">
+                <h3>
+                  Investors Relationships
+                  <img src="assets/icons/external-link.svg" alt="" />
+                </h3>
+                <img
+                  class="open-item-icon"
+                  data-index="6"
+                  src="assets/icons/chevron-down-White.svg"
+                  alt=""
+                />
+              </div>
+              <ul class="item-content" data-index="6">
+                <li><a href="#">Fact Sheet</a></li>
+                <li><a href="#">Share Information</a></li>
+                <li><a href="#">Corporate Governance</a></li>
+                <li><a href="#">General Assembly Meetings</a></li>
+                <li><a href="#">Financial Information</a></li>
+                <li><a href="#">Company Announcements</a></li>
+                <li><a href="#">Corporate Compliance</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-buttom flex-row space-btween">
+          <p class="copy-right">© 2025 EJADA SYSTEMS All rights reserved.</p>
+          <ul class="flex-row gap-20">
+            <li><a href="#">Anti-Bribery and Corruption Policy </a></li>
+            <li><a href="#"> Whistleblowing Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Secure Usage Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------ End footer ------------------------ -->
+
+    <!-- --------- main javascript -------- -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
