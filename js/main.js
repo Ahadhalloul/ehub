@@ -50,3 +50,71 @@ itemHeader.forEach((header) => {
   });
 });
 // --------------------------------------------------
+// TOOGLE PROJECTS EXPANDED CARDS
+function toggleExpandCard(clickedCard) {
+  const projectCard = document.querySelectorAll(
+    ".projects-accordion-cards .card"
+  );
+  projectCard.forEach((card) => {
+    if (card === clickedCard) {
+      clickedCard.classList.toggle("expanded");
+    } else {
+      card.classList.remove("expanded");
+    }
+  });
+}
+// ----------------------------------------
+//  move selected style on side pane menu list
+const menuItem = document.querySelectorAll(".menu-list .item > a ");
+const subMenuItem = document.querySelectorAll(".sub-menu .sub-item a");
+
+const subMenuArrow = document.querySelectorAll(".sub-menu-arrow");
+const subMenuTitle = document.querySelector("#sub-menu-title");
+const subMenu = document.querySelectorAll(".sub-menu");
+
+menuItem.forEach((e) => {
+  e.addEventListener("click", () => {
+    menuItem.forEach((item) => {
+      item.classList.remove("selected");
+    });
+
+    e.classList.add("selected");
+
+    // ---- Handle submenus -------
+    const currantSubmenu = e.nextElementSibling;
+    const currantArrow = e.querySelector(".sub-menu-arrow");
+    if (e.parentElement.classList.contains("has-sub")) {
+      // Close other submenus
+      subMenu.forEach((sm, i) => {
+        if (sm !== currantSubmenu) {
+          sm.classList.add("hidden");
+        }
+      });
+      subMenuArrow.forEach((arr) => {
+        if (arr !== currantArrow) {
+          arr.classList.remove("flip-img");
+        }
+      });
+      // Toggle current submenu
+      currantSubmenu.classList.toggle("hidden");
+      currantArrow.classList.toggle("flip-img");
+    } else {
+      // If normal item clicked, close all submenus
+      subMenu.forEach((sm) => {
+        sm.classList.add("hidden");
+      });
+      subMenuArrow.forEach((arr) => {
+        arr.classList.remove("flip-img");
+      });
+    }
+  });
+});
+
+subMenuItem.forEach((e) => {
+  e.addEventListener("click", () => {
+    subMenuItem.forEach((item) => {
+      item.classList.remove("selected");
+    });
+    e.classList.add("selected");
+  });
+});

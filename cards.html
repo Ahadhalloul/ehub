@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css"
+    />
+    <!-- -------------- main style ------------- -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Solution CARDS  -->
+    <div class="card-container solution-cards gap-16">
+      <div class="card flex-col space-between">
+        <div class="text-layer">1</div>
+        <div class="flex-col gap-12">
+          <div class="card-icon">
+            <img src="assets/icons/Icon1.svg" alt="" />
+          </div>
+          <h2>Solution Name</h2>
+          <p class="hidden">
+            Keep your Applications Running like Clockwork. From cross-industry
+            to real estate, we drive growth with tailored IT solutions. 
+          </p>
+        </div>
+        <a href="#" class="discover-link">
+          <p class="hidden">Discover Your Solution</p>
+          <img class="arrow" src="assets/icons/chevron-right-dark.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="card flex-col space-between">
+        <div class="text-layer">2</div>
+        <div class="flex-col gap-12">
+          <div class="card-icon">
+            <img src="assets/icons/icon2.svg" alt="" />
+          </div>
+          <h2>Solution Name</h2>
+          <p class="hidden">
+            Keep your Applications Running like Clockwork. From cross-industry
+            to real estate, we drive growth with tailored IT solutions. 
+          </p>
+        </div>
+        <a href="#" class="discover-link">
+          <p class="hidden">Discover Your Solution</p>
+          <img class="arrow" src="assets/icons/chevron-right-dark.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="card flex-col space-between">
+        <div class="text-layer">3</div>
+        <div class="flex-col gap-12">
+          <div class="card-icon">
+            <img src="assets/icons/icon3.svg" alt="" />
+          </div>
+          <h2>Solution Name</h2>
+          <p class="hidden">
+            Keep your Applications Running like Clockwork. From cross-industry
+            to real estate, we drive growth with tailored IT solutions. 
+          </p>
+        </div>
+        <a href="#" class="discover-link">
+          <p class="hidden">Discover Your Solution</p>
+          <img class="arrow" src="assets/icons/chevron-right-dark.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="card flex-col space-between">
+        <div class="text-layer">4</div>
+        <div class="flex-col gap-12">
+          <div class="card-icon">
+            <img src="assets/icons/icon4.svg" alt="" />
+          </div>
+          <h2>Solution Name</h2>
+          <p class="hidden">
+            Keep your Applications Running like Clockwork. From cross-industry
+            to real estate, we drive growth with tailored IT solutions. 
+          </p>
+        </div>
+        <a href="#" class="discover-link">
+          <p class="hidden">Discover Your Solution</p>
+          <img class="arrow" src="assets/icons/chevron-right-dark.svg" alt="" />
+        </a>
+      </div>
+    </div>
+    <!-- -------------------------------------------  -->
+    <!-- MC&PR CARD  -->
+    <div class="card-container mc-pr-card gap-16">
+      <div class="card flex-col gap-16">
+        <div class="flex-col gap-8">
+          <div class="card-image">
+            <img
+              src="assets/images/177da0fe788fb4e9af2b004eee29fd3ef2e5fcfe.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex-row space-between">
+            <h5 class="tag">Featured News</h5>
+            <p class="text-gray">24.01.2024</p>
+          </div>
+        </div>
+        <div class="flex-col gap-8">
+          <a href="#">
+            <h3>ejada Wins Informatica’s 2023 Global Channel Partner</h3>
+          </a>
+          <p>ejada Wins Informatica’s 2023 Global Channel Partner</p>
+        </div>
+      </div>
+
+      <div class="card flex-col gap-16">
+        <div class="flex-col gap-8">
+          <div class="card-image">
+            <img
+              src="assets/images/177da0fe788fb4e9af2b004eee29fd3ef2e5fcfe.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex-row space-between">
+            <h5 class="tag">Featured News</h5>
+            <p class="text-gray">24.01.2024</p>
+          </div>
+        </div>
+        <div class="flex-col gap-8">
+          <a href="#">
+            <h3>ejada Wins Informatica’s 2023 Global Channel Partner</h3>
+          </a>
+          <p>ejada Wins Informatica’s 2023 Global Channel Partner</p>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------  -->
+    <!-- project card  -->
+    <div class="card-container project-card">
+      <div class="card flex-col gap-4">
+        <a href="#">
+          <div class="card-image">
+            <img src="assets/images/image 1667.png" alt="" />
+          </div>
+          <div class="card-title flex-col gap-4">
+            <h6>Subtitle</h6>
+            <h3>Project Title</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- -------------------------------------------  -->
+    <!-- projects accordion cards-------------  -->
+    <div class="card-container projects-accordion-cards gap-16">
+      <div class="card expanded" onclick="toggleExpandCard(this)">
+        <div class="card-content">
+          <img class="card-bg" src="assets/images/project-bg-img.jpg" alt="" />
+          <div class="content">
+            <div class="logo">logo here</div>
+            <div class="expanded-card-content flex-col">
+              <img src="assets/icons/Layer_1.svg" alt="" />
+              <h3>Project name</h3>
+              <p>
+                orem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sagittis tempus odio in ultricies. Proin mi arcu,
+                bibendum sed magna quis, sollicitudin aliquet massa. Curabitur
+                at eleifend sapien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleExpandCard(this)">
+        <div class="card-content">
+          <img class="card-bg" src="assets/images/project-bg-img.jpg" alt="" />
+          <div class="content">
+            <div class="logo">logo here</div>
+            <div class="expanded-card-content flex-col">
+              <img src="assets/icons/Layer_1.svg" alt="" />
+              <h3>Project name</h3>
+              <p>
+                orem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sagittis tempus odio in ultricies. Proin mi arcu,
+                bibendum sed magna quis, sollicitudin aliquet massa. Curabitur
+                at eleifend sapien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------  -->
+    <!-- digital transformation card  ----------->
+    <div class="card-container digital-transformation">
+      <div class="card">
+        <div class="shape">
+          <img src="assets/images/Shapes.png" alt="" />
+        </div>
+        <div class="img-section">
+          <div class="img">
+            <img
+              src="assets/images/f4298aa31492b79b5ddf02152933323f3a957006.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="top-head flex-row space-between">
+            <div class="flex-row gap-8 secondary-text-color">
+              01 <img src="assets/icons/arrow-right-green.svg" alt="" />
+            </div>
+            <p>Banking Financial Services & Insurance (BFSI) Solutions</p>
+          </div>
+          <div class="content">
+            <div>
+              <h3 class="sub-head secondary-text-color">Industries</h3>
+              <h1>Cross-Industry Solutions</h1>
+            </div>
+            <p>Innovative Solutions for Diverse Business Needs </p>
+            <a href="#" class="btn btn-secondary">Discover Your Solution</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------  -->
+    <!-- our capabilities card -------------->
+    <div class="card-container our-capabilities">
+      <div class="card flex-col gap-16">
+        <div class="icon">
+          <img src="assets/icons/Icon11.svg" alt="" />
+        </div>
+        <div class="text">
+          <h3>Oracle eBusiness Suite & Fusion Cloud Applications </h3>
+          <p>
+            We provide high-quality, cost-effective implementation services for
+            Oracle EBS Products and Oracle Fusion Cloud applications across
+            various industries and business tracks. ejada also provides Oracle
+            EBS upgrades for apps and DB, and cloud transformation from EBS to
+            Fusion applications. 
+          </p>
+        </div>
+        <a class="flex-row" href="#"
+          >Oracle Fusion <img src="assets/icons/external-link-blue.svg" alt=""
+        /></a>
+      </div>
+    </div>
+    <!-- -------------------------------------------  -->
+    <!-- discover the impact on your business card -------------->
+    <div class="card-container discover-impact">
+      <div class="card">
+        <img src="assets/icons/001-data-integration.svg" alt="" />
+        <div class="text flex-col gap-8">
+          <h3>Increased Efficiency & Productivity</h3>
+          <p>
+            Streamline workflows, automate tasks, and empower your employees to
+            achieve more.
+          </p>
+        </div>
+        <a href="#" class="btn btn-primary-outline"> Request a Demo</a>
+      </div>
+    </div>
+    <!-- ------------------------------------------- -->
+    <!-- Statistics Section -->
+    <div class="statistics-container">
+      <div class="statistic">
+        <h1>400+</h1>
+        <h3>Projects completed</h3>
+        <p>We’ve helped build over 400 amazing projects.</p>
+      </div>
+    </div>
+    <!-- ------------------------------------------- -->
+    <!--  Get startes/ subscribe cards -->
+    <div class="card-container subscribe-card">
+      <div class="content flex-col">
+        <div class="icon">
+          <img src="assets/icons/zap-fast.svg" alt="" />
+        </div>
+        <h1 class="title">Innovation Spotlight</h1>
+        <p>
+          Subscribe to our newsletter to get inside insights into our innovation
+        </p>
+        <div class="flex-row gap-8 input-btn-group">
+          <div class="flex-col">
+            <div class="input">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <p class="input-note">
+              We care about your data in our privacy policy.
+            </p>
+          </div>
+          <button class="btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container subscribe-card">
+      <div class="content flex-col">
+        <div class="icon">
+          <img src="assets/icons/zap-fast.svg" alt="" />
+        </div>
+        <h1 class="title">Ready to Transform Your IT Infrastructure?</h1>
+        <p>
+          Partner with us to enhance your IT ecosystem with secure, scalable,
+          and future-ready solutions.
+        </p>
+        <a class="btn btn-outline" href="#">Get Started Today</a>
+      </div>
+    </div>
+    <!-- ------------------------------------------- -->
+    <!--  mobility and customer expereince cards -->
+    <div class="card-container mobility-experience">
+      <div class="card flex-col gap-16">
+        <div class="card-image">
+          <img
+            src="assets/images/4d56c53949b1270d9d0127d81f6a3d80f5a00137.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card-content flex-col gap-8">
+          <h5 class="tag">Mobility & Customer Experience</h5>
+          <p class="date">August 20, 2022</p>
+          <h3>Mobile App & Web Portal Development</h3>
+          <p>
+            We build user-friendly mobile apps (native and hybrid) and web
+            portals that provide seamless, on-the-go access to services,
+            increasing engagement across platforms.
+          </p>
+          <div class="swiper-container-wrapper">
+            <!-- Fade masks -->
+            <div class="fade-left" id="fadeLeft"></div>
+            <div class="fade-right" id="fadeRight"></div>
+            <!-- swiper continer  -->
+            <div class="swiper industry-swiper" data-id="1">
+              <!-- Slides -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide item">Industry</div>
+                <div class="swiper-slide item">Industry</div>
+                <div class="swiper-slide item">Industry</div>
+                <div class="swiper-slide item">Industry</div>
+                <div class="swiper-slide item">Industry</div>
+              </div>
+              <!-- Arrows -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <div class="author flex-row gap-8">
+            <div class="avatar">
+              <h2 class="text">NE</h2>
+            </div>
+            <div class="flex-col">
+              <h3 class="name">Author Name</h3>
+              <h6 class="dep">Department</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card praimary-bg flex-col gap-16">
+        <div class="card-image">
+          <img
+            src="assets/images/4d56c53949b1270d9d0127d81f6a3d80f5a00137.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card-content flex-col gap-8">
+          <h5 class="tag">Mobility & Customer Experience</h5>
+          <p class="date">August 20, 2022</p>
+          <h3>Mobile App & Web Portal Development</h3>
+          <p>
+            We build user-friendly mobile apps (native and hybrid) and web
+            portals that provide seamless, on-the-go access to services,
+            increasing engagement across platforms.
+          </p>
+
+          <div class="swiper-container-wrapper">
+            <!-- Fade masks -->
+            <div class="fade-left" id="fadeLeft"></div>
+            <div class="fade-right" id="fadeRight"></div>
+            <!-- swiper continer  -->
+            <div class="swiper industry-swiper" data-id="2">
+              <!-- Slides -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide item">Industry</div>
+                <div class="swiper-slide item">Industry</div>
+                <div class="swiper-slide item">Industry</div>
+                <div class="swiper-slide item">Industry</div>
+                <div class="swiper-slide item">Industry</div>
+              </div>
+              <!-- Arrows -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <div class="author flex-row gap-8">
+            <div class="avatar">
+              <h2 class="text">NE</h2>
+            </div>
+            <div class="flex-col">
+              <h3 class="name">Author Name</h3>
+              <h6 class="dep">Department</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------- -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
