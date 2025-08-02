@@ -42,65 +42,12 @@ const sliderSwiper = new Swiper(".news-slider", {
 // window.addEventListener("load", () => {
 //   updateFades();
 // });
-
-//
-//
-//
-//
-/////
-//
-//
-//
-/////
-//
-//
-//
-///
-// // loop througt swipers
-// const myLogosSwiper = document.querySelectorAll(".industry-swiper");
-// for (i = 0; i < myLogosSwiper.length; i++) {
-//   myLogosSwiper[i].classList.add("industry-swiper-" + i);
-//   var logosSwiper = new Swiper(".industry-swiper-" + i, {
-//     slidesPerView: 3.7,
-//     spaceBetween: 8,
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//     on: {
-//       reachBeginning: updateFades,
-//       reachEnd: updateFades,
-//       slideChange: updateFades,
-//     },
-//   });
-
-//   function updateFades() {
-//     const fadeLeft = document.getElementById("fadeLeft");
-//     const fadeRight = document.getElementById("fadeRight");
-//     fadeLeft.style.display = logosSwiper.isBeginning ? "none" : "block";
-//     fadeRight.style.display = logosSwiper.isEnd ? "none" : "block";
-//   }
-// }
-// // Fallback on window load
-// window.addEventListener("load", () => {
-//   updateFades();
-// });
-
-// Event delegation for clicks on elements inside the swiper-wrapper
-
 // -------------------------
 // ---------------------
 // -------------------------
 
-// myswipers = document.querySelectorAll(".industry-swiper");
-// myswipers.forEach((element) => {
-//   element.addEventListener("click", () => {
-//     console.log(element + "clicked");
-//   });
-// });
-
 function updateFades(swiper) {
-  const wrapper = swiper.el.closest(".swiper-container-wrapper");
+  const wrapper = swiper.el.closest(".industry-swiper-container");
   const leftMask = wrapper.querySelector(".fade-left");
   const rightMask = wrapper.querySelector(".fade-right");
 

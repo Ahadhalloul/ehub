@@ -702,7 +702,10 @@ header.dark .main-nav .ehub-text {
 }
 
 /* industry logos swiper  */
-.mobility-experience .swiper.industry-swiper {
+.industry-swiper-container {
+  position: relative;
+}
+.industry-swiper-container .swiper.industry-swiper {
   position: relative;
   padding: 10px;
   position: relative;
@@ -741,8 +744,8 @@ header.dark .main-nav .ehub-text {
   color: #005a30;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.swiper.industry-swiper .swiper-button-prev,
+.swiper.industry-swiper .swiper-button-next {
   width: 40px;
   height: 100%;
   top: 24px;
@@ -751,28 +754,25 @@ header.dark .main-nav .ehub-text {
   font-weight: bold;
   z-index: 10;
 }
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.swiper.industry-swiper .swiper-button-next::after,
+.swiper.industry-swiper .swiper-button-prev::after {
   font-size: 11px !important;
 }
-.swiper-button-prev {
+.swiper.industry-swiper .swiper-button-prev {
   left: -17px;
 }
 
-.swiper-button-next {
+.swiper.industry-swiper .swiper-button-next {
   right: -17px;
 }
 
-.swiper-button-disabled {
-  /* opacity: 0; */
-  /* pointer-events: none; */
+.swiper.industry-swiper .swiper-button-disabled {
+  display: none;
 }
-.swiper-container-wrapper {
-  position: relative;
-}
+
 /* Fade overlays */
-.fade-left,
-.fade-right {
+.industry-swiper-container .fade-left,
+.industry-swiper-container .fade-right {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -781,7 +781,7 @@ header.dark .main-nav .ehub-text {
   pointer-events: none;
 }
 
-.fade-left {
+.industry-swiper-container .fade-left {
   left: 0;
   background: linear-gradient(
     to right,
@@ -794,7 +794,7 @@ header.dark .main-nav .ehub-text {
   );
 }
 
-.fade-right {
+.industry-swiper-container .fade-right {
   right: 0px;
   background: linear-gradient(
     to left,
@@ -807,7 +807,7 @@ header.dark .main-nav .ehub-text {
   );
 }
 /* card praimary bg Fade overlays */
-.mobility-experience .card.praimary-bg .fade-right {
+.industry-swiper-container .card.praimary-bg .fade-right {
   background: linear-gradient(
     to left,
     rgb(242, 244, 255, 1),
@@ -818,7 +818,7 @@ header.dark .main-nav .ehub-text {
     rgba(242, 244, 255, 0)
   );
 }
-.mobility-experience .card.praimary-bg .fade-left {
+.industry-swiper-container .card.praimary-bg .fade-left {
   background: linear-gradient(
     to right,
     rgb(242, 244, 255, 1),
