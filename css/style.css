@@ -102,12 +102,16 @@ a {
   background: var(--primary-p2-dark-color);
   color: white;
 }
+.btn-primary-dark {
+  background: var(--primary-color);
+  color: white;
+}
 .btn-secondary {
   background: var(--success-color);
 }
 .btn-primary-outline {
   background-color: none;
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
 .input {
@@ -128,6 +132,7 @@ a {
 .flip-img {
   transform: scaleY(-1);
 }
+
 /* Start header ------------------  */
 /* up nav  */
 .up-nav {
@@ -897,6 +902,44 @@ d .hero-container .img img {
 .fade-hidden {
   opacity: 0;
 }
+/* ------------------  */
+/* industry lists  */
+.card .industry-list {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0px;
+}
+.card .industry-list li {
+  display: flex;
+  padding: 5px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 20px;
+  background: #e8f4ed;
+  font-size: 11px;
+}
+.card .industry-list li:nth-child(1) {
+  background-color: #e1f3f9;
+  color: #163eb8;
+}
+.card .industry-list li:nth-child(2) {
+  background-color: #e8f4ed;
+  color: #005a30;
+}
+.card .industry-list li:nth-child(3) {
+  background-color: #fbdde8;
+  color: #b40041;
+}
+.card .industry-list li:nth-child(4) {
+  background-color: #fcf7e1;
+  color: #f96605;
+}
+.card .industry-list li:nth-child(5) {
+  background-color: #dabee1;
+  color: #3f1e72;
+}
 /* ----------------------------------------  */
 /* highlight blog------------------------- */
 .highlight-blog-container {
@@ -941,40 +984,78 @@ d .hero-container .img img {
   font-size: 26px;
   font-weight: 600;
 }
-.highlight-blog-container .card .industry-list {
-  display: flex;
-  gap: 8px;
-  margin: 16px 0px;
-}
-.highlight-blog-container .card .industry-list li {
-  display: flex;
-  padding: 5px 8px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  border-radius: 20px;
-  background: #e8f4ed;
-  font-size: 11px;
-}
-.highlight-blog-container .card .industry-list li:nth-child(1) {
-  background-color: #e8f4ed;
-  color: #005a30;
-}
-.highlight-blog-container .card .industry-list li:nth-child(2) {
-  background-color: #fcf7e1;
-  color: #f96605;
-}
-.highlight-blog-container .card .industry-list li:nth-child(3) {
-  background-color: #e1f3f9;
-  color: #163eb8;
-}
+
 .highlight-blog-container .card .author-container {
   border-top: 1px solid var(--text-neutrals-n6-color);
   padding-top: 20px;
   justify-content: space-between;
 }
+
 /* ----------------------------------------  */
+/* solutions overlap scrollable cards ------------------------- */
+.solution-overlap-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 575px;
+  overflow-y: scroll;
+}
+.solution-overlap-cards-container::-webkit-scrollbar {
+  display: none;
+}
+.solution-overlap-cards-container .card {
+  display: flex;
+  width: 580px;
+  min-height: 404.92px;
+  padding: 24px 30px;
+  flex-direction: column;
+  border-radius: 16px;
+  border: 1px solid #e6e8e8;
+  background: #fff;
+  box-shadow: 0 -4px 48px 0 rgba(0, 0, 0, 0.18);
+}
+.solution-overlap-cards-container .card .title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+}
+.solution-overlap-cards-container .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.solution-overlap-cards-container p {
+  color: var(--text-neutrals-n2-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+.solution-overlap-cards-container .card .btn {
+  color: var(--text-primary-color);
+}
+.solution-overlap-cards-container .card .industry-list {
+  margin-top: 8px;
+}
+.solution-overlap-cards-container .last-card,
+.solution-overlap-cards-container .discover-card {
+  position: relative;
+}
+.solution-overlap-cards-container .last-card .shape,
+.solution-overlap-cards-container .discover-card .shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.solution-overlap-cards-container .last-card .card-content,
+.solution-overlap-cards-container .discover-card .card-content {
+  width: 415px;
+}
+.solution-overlap-cards-container .discover-card .title {
+  font-size: 40px;
+}
+.solution-overlap-cards-container .discover-card .btn {
+  color: #fff;
+}
+/* ---------------------------------------  */
 /* social media cards------------------------- */
 .social-media-container {
   gap: 12px;
