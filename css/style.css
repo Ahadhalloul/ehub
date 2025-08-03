@@ -654,6 +654,9 @@ d .hero-container .img img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .subscribe-card .content {
   display: flex;
@@ -1011,12 +1014,16 @@ d .hero-container .img img {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: var(--primary-color);
 }
 .social-media-container .card .like {
   border-top: 1px solid #d1d4d4;
   display: flex;
   justify-content: center;
   padding: 10px 0px;
+}
+.social-media-container .card .like img {
+  cursor: pointer;
 }
 /* ----------------------------------------  */
 /* events cards -------------------- */
