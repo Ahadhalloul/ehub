@@ -816,7 +816,8 @@ header.inner-header-bg .main-nav {
 }
 
 .swiper.industry-swiper .swiper-button-disabled {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Fade overlays */
@@ -856,7 +857,7 @@ header.inner-header-bg .main-nav {
   );
 }
 /* card praimary bg Fade overlays */
-.industry-swiper-container .card.praimary-bg .fade-right {
+.card.praimary-bg .industry-swiper-container .fade-right {
   background: linear-gradient(
     to left,
     rgb(242, 244, 255, 1),
@@ -867,7 +868,7 @@ header.inner-header-bg .main-nav {
     rgba(242, 244, 255, 0)
   );
 }
-.industry-swiper-container .card.praimary-bg .fade-left {
+.card.praimary-bg .industry-swiper-container .fade-left {
   background: linear-gradient(
     to right,
     rgb(242, 244, 255, 1),
@@ -929,7 +930,7 @@ header.inner-header-bg .main-nav {
 /* ----------------------------------------  */
 /* Swiper Container------------------------- */
 /* news slider specific (images slider card) */
-.swiper {
+.swiper.news-slider {
   width: 100%;
   margin: 0px auto;
   padding-bottom: 50px;
