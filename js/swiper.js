@@ -42,10 +42,10 @@ const sliderSwiper = new Swiper(".news-slider", {
 // window.addEventListener("load", () => {
 //   updateFades();
 // });
-// -------------------------
+//
 // ---------------------
 // -------------------------
-
+//  industry logos swiper of mobility and customer expereince cards (more than one card !!)
 function updateFades(swiper) {
   const wrapper = swiper.el.closest(".industry-swiper-container");
   const leftMask = wrapper.querySelector(".fade-left");
@@ -57,7 +57,7 @@ function updateFades(swiper) {
 
   console.log(`Swiper ${swiper.el.dataset.id} at slide ${swiper.activeIndex}`);
 }
-//
+//create swiper for each card
 document.querySelectorAll(".industry-swiper").forEach((el, index) => {
   const swiper = new Swiper(el, {
     slidesPerView: 3.7,

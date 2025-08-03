@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ehub</title>
+    <!-- -------------- main style ------------- -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ------------------ Start header ---------------------- -->
+    <!-- for inner header add "inner-header-bg" class in header tag  -->
+    <header class="inner-header-bg">
+      <!-- --------------Up Nav ------------- -->
+      <div class="up-nav flex-row space-between">
+        <div class="flex-row gap-35">
+          <a class="text-blue" href="#">ejada website</a>
+          <a class="flex-row gap-4 text-gray" href="#"
+            >Investors Relations
+            <img src="assets/icons/external-link.svg" alt=""
+          /></a>
+        </div>
+        <div class="dots-more pointer">
+          <img src="assets/icons/dots-vertical.svg" alt="" />
+        </div>
+        <ul class="extra-nav flex-row gap-16">
+          <li class="flex-row">
+            <img src="assets/icons/Vector.svg" alt="" /><a href=""
+              >Accessibility</a
+            >
+          </li>
+          <!--- Language Switch --->
+          <div class="language-dropdown" onclick="toggleLanguageDropdown()">
+            <img id="language-flag" src="assets/icons/us.svg" alt="Flag" />
+            <span id="language-code">EN</span>
+            <img src="assets/icons/chevron-down-blue.svg" alt="" />
+            <ul id="language-options" class="language-options hidden">
+              <li onclick="setLanguage('EN', 'us')">
+                <img src="assets/icons/us.png" alt="US" /> EN
+              </li>
+              <li onclick="setLanguage('AR', 'sa')">
+                <img src="assets/icons/sa.png" alt="Saudi" /> AR
+              </li>
+            </ul>
+          </div>
+          <!-- -------------  -->
+          <img src="assets/icons/Line-blue.svg" alt="" />
+          <li>
+            <a class="flex-row gap-4" href=""
+              >Bawabetna<img src="assets/icons/external-link-blue.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- ----------------Second/Main Nav------------------ -->
+      <div class="main-nav flex-row space-between">
+        <div class="nav-menu-icon pointer">
+          <img src="assets/icons/menu-2.svg" alt="" />
+        </div>
+        <div class="logo">
+          <img src="assets/logos/ejada-logo.png" alt="" />
+        </div>
+        <ul class="nav-items flex-row gap-8">
+          <li class="item">
+            <a class="flex-row gap-4" href="#"
+              >What We Do<img src="assets/icons/chevron-down-blue.svg" alt=""
+            /></a>
+          </li>
+          <li class="item">
+            <a href="#">Who We Are</a>
+          </li>
+          <li class="item">
+            <a href="#">Knowledge Hub</a>
+          </li>
+          <li class="item">
+            <a href="#">Join Our Team</a>
+          </li>
+          <li class="item">
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+        <div class="flex-row gap-16">
+          <div class="search pointer">
+            <img src="assets/icons/search.svg" alt="search icon" />
+          </div>
+          <div class="nav-btns flex-row gap-12">
+            <a class="btn btn-secondary ehub-text">
+              <span><img src="assets/icons/e.svg" alt="" /></span>hub
+            </a>
+            <a class="btn btn-primary"> Contact Us </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ------------------ End header ------------------------ -->
+    <!-- ------------------------------------------------------ -->
+    <!-- ------------------ Start main ------------------------ -->
+    <main>
+      <div class="hero-container flex-row space-between">
+        <div class="text">
+          <h1 class="title">The Power of 500+ Solutions</h1>
+          <h5 class="sub-title">
+            Your Gateway to a Tailored Solutions Catalogue
+          </h5>
+        </div>
+        <div class="img">
+          <img src="assets/images/hero-Image.png" alt="" />
+        </div>
+
+        <div class="bottom-shape-bg">
+          <img src="assets/images/hero-Buttom.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <!-- ------------------ End main -------------------------- -->
+
+    <!-- --------- main javascript -------- -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

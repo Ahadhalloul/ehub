@@ -134,6 +134,7 @@ a {
   background: #f2f2f2;
   padding: 16px 148px;
 }
+
 header a {
   padding: 8px 10px;
   color: var(--text-primary-color);
@@ -248,6 +249,54 @@ header.dark .main-nav .ehub-text {
 /* End header ----------------  */
 /* ----------------------------------------------  */
 /* Start main ---------------  */
+/* inner header hero section ---------------- */
+/* inner header  */
+header.inner-header-bg .up-nav,
+header.inner-header-bg .main-nav {
+  background-color: #f7f9ff;
+}
+/* hero  */
+.hero-container {
+  background-color: #f7f9ff;
+  width: 100%;
+  padding: 50px 148px 40px;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.hero-container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-container .text .title {
+  color: var(--primary-color);
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+}
+.hero-container .text .sub-title {
+  color: var(--text-neutrals-n2-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+.hero-container .bottom-shape-bg {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+}
+.bottom-shape-bg img {
+  width: 100%;
+}
+.hero-container .text,
+.hero-container .img {
+  z-index: 3;
+}
+.hero-container .img img {
+  width: 100%;
+}
+/* ----------------------------  */
 /* cards */
 .card-container {
   padding: 20px;
@@ -1072,12 +1121,14 @@ footer {
 /* End footer --------------------  */
 
 /* --------------------Responssive----------------------------- */
-/* -----Header & Footer media query--------- */
+/* -----Header & Footer & hero media query--------- */
 @media screen and (max-width: 1410px) {
   .up-nav,
   .main-nav,
-  .footer-container {
-    padding: 16px 60px;
+  .footer-container,
+  .hero-container {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -1087,6 +1138,10 @@ footer {
   .main-nav,
   .footer-container {
     padding: 16px 24px;
+  }
+  .hero-container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .dots-more,
@@ -1103,6 +1158,17 @@ footer {
     width: 83px;
     height: 30px;
   }
+  /* hero  */
+  .hero-container .text {
+    min-width: 300px;
+  }
+  .hero-container .text .title {
+    font-size: 32px;
+  }
+  .hero-container .text .sub-title {
+    font-size: 16px;
+  }
+
   /* footer  */
   .footer-content {
     display: grid;
