@@ -999,6 +999,7 @@ d .hero-container .img img {
   gap: 12px;
   height: 575px;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .solution-overlap-cards-container::-webkit-scrollbar {
   display: none;
