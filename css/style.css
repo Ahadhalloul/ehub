@@ -740,6 +740,7 @@ d .hero-container .img img {
   font-weight: 400;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1097,6 +1098,7 @@ d .hero-container .img img {
 .social-media-container .card p {
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1151,6 +1153,7 @@ d .hero-container .img img {
 }
 .events-cards .card .content p {
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
