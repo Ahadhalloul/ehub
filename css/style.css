@@ -1033,6 +1033,10 @@ d .hero-container .img img {
 .solution-overlap-cards-container .card .btn {
   color: var(--text-primary-color);
 }
+.solution-overlap-cards-container .card-btns {
+  gap: 8px;
+}
+
 .solution-overlap-cards-container .card .industry-list {
   margin-top: 8px;
 }
