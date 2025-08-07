@@ -63,7 +63,7 @@ function toggleExpandCard(clickedCard) {
     }
   });
 }
-// ----------------------------------------
+// ---------------------------------------------
 //  move selected style on side pane menu list
 const menuItem = document.querySelectorAll(".menu-list .item > a ");
 const subMenuItem = document.querySelectorAll(".sub-menu .sub-item a");
@@ -71,6 +71,8 @@ const subMenuItem = document.querySelectorAll(".sub-menu .sub-item a");
 const subMenuArrow = document.querySelectorAll(".sub-menu-arrow");
 const subMenuTitle = document.querySelector("#sub-menu-title");
 const subMenu = document.querySelectorAll(".sub-menu");
+
+const itemContent = document.querySelectorAll(".side-pane-content div");
 
 menuItem.forEach((e) => {
   e.addEventListener("click", () => {
@@ -102,10 +104,15 @@ menuItem.forEach((e) => {
       // If normal item clicked, close all submenus
       subMenu.forEach((sm) => {
         sm.classList.add("hidden");
+        subMenuItem.forEach((item) => {
+          item.classList.remove("selected");
+        });
       });
       subMenuArrow.forEach((arr) => {
         arr.classList.remove("flip-img");
       });
+      // hide others contents
+      hideContent(e);
     }
   });
 });
@@ -116,5 +123,24 @@ subMenuItem.forEach((e) => {
       item.classList.remove("selected");
     });
     e.classList.add("selected");
+    hideContent(e);
   });
 });
+
+// hide others content
+function hideContent(e) {
+  if (!(e.dataset.item === "all")) {
+    itemContent.forEach((c) => {
+      c.classList.add("hidden");
+    });
+    const currentContent = document.getElementById(e.dataset.item);
+    currentContent.classList.remove("hidden");
+  }
+  if (e.dataset.item === "all") {
+    itemContent.forEach((c) => {
+      c.classList.remove("hidden");
+    });
+  }
+}
+// -------
+// ---------------------------------------------

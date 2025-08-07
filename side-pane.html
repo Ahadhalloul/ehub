@@ -7,41 +7,59 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div class="side-pane-container">
-      <ul class="menu-list">
-        <li class="item title">Solutions</li>
-        <li class="item"><a class="selected">All Solutions</a></li>
-        <li class="item has-sub">
-          <a id="sub-menu-title">
-            <div class="flex-row space-between">
-              Enterprise Application
-              <img
-                class="sub-menu-arrow"
-                src="assets/icons/chevron-down-black.svg"
-                alt=""
-              />
-            </div>
-          </a>
-          <ul class="sub-menu hidden" id="sub-menu">
-            <li class="sub-item">
-              <a class="selected">sub menu content</a>
-            </li>
-            <li class="sub-item"><a>sub menu content</a></li>
-          </ul>
-        </li>
+    <div class="flex-row">
+      <div class="side-pane-container">
+        <ul class="menu-list">
+          <li class="item title">Solutions</li>
+          <li class="item">
+            <a class="selected" data-item="all">All Solutions</a>
+          </li>
+          <li class="item has-sub">
+            <a id="sub-menu-title">
+              <div class="flex-row space-between">
+                Enterprise Application
+                <img
+                  class="sub-menu-arrow"
+                  src="assets/icons/chevron-down-black.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <ul class="sub-menu hidden" id="sub-menu">
+              <li class="sub-item">
+                <a data-item="item-1">sub menu content</a>
+              </li>
+              <li class="sub-item">
+                <a data-item="item-2">sub menu content</a>
+              </li>
+            </ul>
+          </li>
 
-        <li class="item"><a>Emerging Technology</a></li>
-        <li class="item"><a>Data and Analytics</a></li>
-        <li class="item">
-          <a>Mobility & Customer Experience (CX) </a>
-        </li>
-        <li class="item">
-          <a>Infrastructure, ITOps & Observability</a>
-        </li>
-        <li class="item"><a>Cloud Solutions</a></li>
-        <li class="item"><a>Cybersecurity</a></li>
-        <li class="item"><a>Pre-built Solutions</a></li>
-      </ul>
+          <li class="item"><a data-item="item-3">Emerging Technology</a></li>
+          <li class="item"><a data-item="item-4">Data and Analytics</a></li>
+          <li class="item">
+            <a data-item="item-5">Mobility & Customer Experience (CX) </a>
+          </li>
+          <li class="item">
+            <a data-item="item-6">Infrastructure, ITOps & Observability</a>
+          </li>
+          <li class="item"><a data-item="item-7">Cloud Solutions</a></li>
+          <li class="item"><a data-item="item-8">Cybersecurity</a></li>
+          <li class="item"><a data-item="item-9">Pre-built Solutions</a></li>
+        </ul>
+      </div>
+      <!-- content of the side pane items -->
+      <main class="side-pane-content">
+        <div class="card" id="item-1">enterprise 1 content</div>
+        <div class="card" id="item-2">enterprise 2 content</div>
+        <div class="card" id="item-3">emerging content</div>
+        <div class="card" id="item-4">data content</div>
+        <div class="card" id="item-5">mobility content</div>
+        <div class="card" id="item-6">infrastructure content</div>
+        <div class="card" id="item-7">cloud content</div>
+        <div class="card" id="item-8">Cybersecurity content</div>
+        <div class="card" id="item-9">Pre-built content</div>
+      </main>
     </div>
     <script src="js/main.js"></script>
   </body>

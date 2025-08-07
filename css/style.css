@@ -313,11 +313,14 @@ d .hero-container .img img {
   border: 1px solid #e6e8e8;
   box-shadow: 0px -4px 90px 0px rgba(0, 0, 0, 0.12);
   padding: 16px;
-  background: #f3f5f8;
+  background: #fff;
   color: var(--text-primary-color);
   transition: 0.3s;
   position: relative;
   overflow: hidden;
+}
+.card.praimary-bg {
+  background-color: #f2f4ff;
 }
 .card .tag {
   display: flex;
@@ -343,6 +346,7 @@ d .hero-container .img img {
   font-size: 16px;
   font-weight: 400;
 }
+
 /* --------------------  */
 /* solution cards ------ */
 .solution-cards .card img.light,
